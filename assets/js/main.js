@@ -259,4 +259,48 @@
 
 			});
 
+	// // Menu.
+	// 	var $menu = $('#menu'),
+	// 		$menu_openers = $menu.find('ul li a.opener'); // Find all opener links
+
+	// 	// Openers.
+	// 		$menu_openers.each(function() {
+
+	// 			var $this = $(this);
+
+	// 			$this.on('click', function(event) {
+
+	// 				// Prevent default.
+	// 					event.preventDefault();
+
+	// 				// Toggle.
+	// 					$this.toggleClass('active');
+	// 					$this.next('ul').toggleClass('active');
+			
+	// 				// Handle sub-submenus
+	// 					if ($this.parents('ul').hasClass('active')) { // If parent submenu is open
+	// 						// Toggle sub-submenu if clicked on its opener
+	// 							if ($this.next('ul').hasClass('active')) {
+	// 								$this.next('ul').toggleClass('active');
+	// 							} else {
+	// 								// Close other open sub-submenus within the same submenu
+	// 									$this.closest('ul').find('ul.active').not($this.next('ul')).removeClass('active');
+	// 							}
+	// 					} else {
+	// 						// Close other open submenus and sub-submenus
+	// 							$menu_openers.not($this).removeClass('active');
+	// 							$menu_openers.next('ul').removeClass('active');
+	// 					}
+					
+	// 				    $menu_openers.not($this).removeClass('active');
+	// 					$this.toggleClass('active');
+
+	// 				// Trigger resize (sidebar lock).
+	// 					$window.triggerHandler('resize.sidebar-lock');
+
+	// 			});
+
+	// 		});
+
+
 })(jQuery);
